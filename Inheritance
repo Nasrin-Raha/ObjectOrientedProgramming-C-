@@ -1,0 +1,41 @@
+//Inheritace : inherit data from one class to the other class
+
+
+using System;
+
+class Inheritance
+{
+
+public class ClassParent{
+    
+    protected int myInt;
+    
+    public void Print()
+    {
+        Console.WriteLine("Hello World");
+    }
+}
+
+public class ClassChild: ClassParent 
+{
+    public static void Main(string[] args)
+    {
+        ClassChild c = new ClassChild();
+        c.Print();
+        int myint2 = c.myInt;
+    }
+}
+
+//in below code the myInt is inacceble because its only accecceble in class one 
+
+public class Class3
+{
+    public static void Main(string[] args)
+    {
+         ClassChild c = new ClassChild();
+
+          int myint2 = c.myInt;
+    }
+}
+
+}
