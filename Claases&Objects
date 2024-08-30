@@ -1,0 +1,53 @@
+//Classes and Objects
+
+
+
+using System;
+
+public class Car
+{
+    
+    // If we use static it means we dont need to creat objects for accessing the classes
+    // Fields
+    private int speed;
+    private string color;
+    private float price;
+
+    // Constructor (optional, to initialize fields)
+    public Car(int speed, string color, float price)
+    {
+        this.speed = speed;
+        this.color = color;
+        this.price = price;
+    }
+
+    // Methods
+    public void Start()
+    {
+        Console.WriteLine("Car Started.");
+    }
+
+    public void Drive()
+    {
+        Console.WriteLine("Car is driving");
+    }
+
+    public void Stop()
+    {
+        Console.WriteLine("Car stopped");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Create an instance of Car
+        Car myCar = new Car(100, "Red", 15000.0f);
+
+        // Call methods on the Car instance
+        myCar.Start();
+        myCar.Drive();
+        myCar.Stop();
+    }
+}
