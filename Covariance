@@ -1,0 +1,30 @@
+//Covariance
+using System;
+
+class Covariance
+{
+    
+    public class ExampleClass{
+        
+    }
+    
+    public class DerivedExampleClass: ExampleClass{
+        
+    }
+    
+    public class MainClass{
+        
+        public static void ExampleMethod(ExampleClass ex)
+        {
+            
+        }
+        
+        public static void Main(string[] args)
+        {
+            ExampleClass exampleclass = new ExampleClass();
+            DerivedExampleClass derivedclass = new DerivedExampleClass();
+            ExampleMethod(ExampleClass);
+            ExampleMethod(derivedclass);
+        }
+    }
+}
