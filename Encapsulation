@@ -1,0 +1,27 @@
+//Encapsulation means hidding data
+// we use access modefiers like public , private , internal and ..... to hide data and functions from one class to the other class.
+
+using System;
+
+class Encapsulation
+{
+    private static int number1 = 1;
+    private static int number2 = 2;
+    
+    
+    public static int MultiplyWithExtras(int num1, int num2)
+    {
+        return num1 * num2 + number1 + number2;
+        
+    }
+}
+
+
+public class MainClass
+{
+    public static void Main(string[] args)
+    {
+        Encapsulation.MultiplyWithExtras(1, 2);
+        Console.WriteLine(Encapsulation.MultiplyWithExtras(1, 2));
+    }
+}
